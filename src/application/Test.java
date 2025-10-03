@@ -5,5 +5,6 @@ public class Test {
         // update code
         System.out.println("Je suis le master");
         System.out.println("Je suis le dev");
+        System.out.println("Je suis le fork");
     }
 }
