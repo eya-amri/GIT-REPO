@@ -20,5 +20,10 @@ pipeline {
                 sh 'java -cp src application.Test'
             }
         }
+        stage('display message'){
+            steps{
+                echo 'hello from github'
+            }
+        }
     }
 } // <-- fermeture du bloc pipeline
