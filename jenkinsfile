@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools{
+    tools {
         jdk 'JDK21'
     }
 
@@ -10,16 +10,15 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/eya-amri/GIT-REPO.git'
             }
         }
-        stage('compile code'){
-            steps{
+        stage('compile code') {
+            steps {
                 sh 'javac src/application/Test.java'
             }
         }
-        stage('excute code'){
-            steps{
+        stage('execute code') {
+            steps {
                 sh 'java -cp src application.Test'
             }
         }
-            
-        
     }
+} // <-- fermeture du bloc pipeline
